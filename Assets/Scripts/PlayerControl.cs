@@ -19,9 +19,9 @@ public class PlayerControl : MonoBehaviour
     void Update()
 
     {
-        if (transform.position.x < -15)
+        if (transform.position.x < -20)
         {
-            transform.position = new Vector3(-15, transform.position.y, transform.position.z);
+            transform.position = new Vector3(-20, transform.position.y, transform.position.z);
         }
         else if (transform.position.x > 20)
         {
