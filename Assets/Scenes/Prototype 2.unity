@@ -549,7 +549,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: fc01a3bb589cebc4aa10892db165243b, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -11.95
+      value: -11.87
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: fc01a3bb589cebc4aa10892db165243b, type: 3}
       propertyPath: m_LocalRotation.x
@@ -2034,7 +2034,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!81 &534669903
 AudioListener:
   m_ObjectHideFlags: 0
@@ -8087,7 +8087,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 195b7e2e2a079e3418c9b55f7590eb5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
+  player: {fileID: 342828909}
 --- !u!81 &1923585224
 AudioListener:
   m_ObjectHideFlags: 0
@@ -8146,7 +8146,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1923585222}
   m_LocalRotation: {x: 0.25375786, y: 0, z: 0, w: 0.9672678}
-  m_LocalPosition: {x: 0, y: 2.31, z: -11.57}
+  m_LocalPosition: {x: 0, y: 2.31, z: -11.3}
   m_LocalScale: {x: 1, y: 20.4, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
