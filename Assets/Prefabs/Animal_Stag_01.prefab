@@ -92,13 +92,12 @@ GameObject:
   - component: {fileID: 3037336626941196324}
   - component: {fileID: 3037336626523249981}
   - component: {fileID: 704996058}
-  - component: {fileID: 768875607}
   - component: {fileID: 54688802743481700}
   - component: {fileID: 65642621538022452}
   - component: {fileID: 114122658230609734}
   m_Layer: 0
   m_Name: Animal_Stag_01
-  m_TagString: Untagged
+  m_TagString: Animals
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -111,7 +110,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3037336626948537754}
   m_LocalRotation: {x: -0.0012968201, y: -0.99808764, z: 0.022484235, w: -0.057566565}
-  m_LocalPosition: {x: -14.7, y: 0, z: 15.24}
+  m_LocalPosition: {x: -14.7, y: 1, z: 15.24}
   m_LocalScale: {x: 11, y: 11, z: 11}
   m_Children:
   - {fileID: 3037336626948384632}
@@ -171,25 +170,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f997d87d56d852e4b8659d146d409571, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &768875607
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3037336626948537754}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b218b759ed65ac64d8abd74a5c301e07, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animalPrefabs:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  animalIndex: 5
 --- !u!54 &54688802743481700
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -198,7 +178,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3037336626948537754}
   serializedVersion: 2
-  m_Mass: 1
+  m_Mass: 10
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 0
@@ -217,8 +197,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.43, y: 0.75, z: 1.1338929}
-  m_Center: {x: -0.008742809, y: 0.34, z: -0.29305315}
+  m_Size: {x: 0.39861703, y: 0.32, z: 0.57837343}
+  m_Center: {x: -0.024434308, y: 0.25, z: -0.20979136}
 --- !u!114 &114122658230609734
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -231,6 +211,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 00a0e6a649228894c9628395de69252e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  particle: {fileID: 0}
 --- !u!1 &3037336626948616602
 GameObject:
   m_ObjectHideFlags: 0

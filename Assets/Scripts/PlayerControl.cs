@@ -9,16 +9,21 @@ public class PlayerControl : MonoBehaviour
 
     public GameObject projectilePrefab;
 
+    //Instantiate projectile after a certain amount of time
+    private float cooldownStart;
+    private float cooldownTime = 0.5f;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
 
     {
+        //Character Move
         if (transform.position.x < -20)
         {
             transform.position = new Vector3(-20, transform.position.y, transform.position.z);
@@ -30,9 +35,15 @@ public class PlayerControl : MonoBehaviour
         horizontalinput = Input.GetAxis("Horizontal");
         transform.Translate(Vector3.right * horizontalinput * Time.deltaTime * speed);
 
-        if (Input.GetButtonDown("Fire1"))
-            Instantiate(projectilePrefab,transform.position, projectilePrefab.transform.rotation);
+        //projectile instantiation
+        if (Input.GetKeyDown(KeyCode.Space) && Time.time - cooldownStart > cooldownTime)
+        {
+            Instantiate(projectilePrefab, transform.position, projectilePrefab.transform.rotation);
+            cooldownStart = Time.time;
+        }
+           
 
-        
     }
+    
+   
 }

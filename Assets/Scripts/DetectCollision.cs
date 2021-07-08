@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class DetectCollision : MonoBehaviour
 {
+    public ParticleSystem particle;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,6 +22,12 @@ public class DetectCollision : MonoBehaviour
 
         Destroy(gameObject);
         Destroy(other.gameObject);
+
+    }
+    private void OnCollisionEnter(Collision collision)
+    {
+        Debug.Log("GameOver");
+        particle.Play();
 
     }
 }

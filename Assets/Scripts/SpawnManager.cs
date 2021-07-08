@@ -5,20 +5,14 @@ using UnityEngine;
 public class SpawnManager : MonoBehaviour
 {
     public GameObject[] animalPrefabs;
-    public int animalIndex;
-    private float spawnRangeX = 15;
+    //public int animalIndex;  // iki yerde de animalindex tanimlamisiz.
+    //private float spawnRangeX = 15;
     private float spawnPosZ = 30;
     private float startDelay = 2;
     private float spawnInterval = 1.5f;
     // Start is called before the first frame update
 
-    //void SpawnRandomAnimal()
-    //{
-    //    int animalIndex = Random.Range(0, animalPrefabs.Length);
-
-    //    Vector3 spawnPos = new Vector3(Random.Range(-spawnRangeX, spawnRangeX), 0, spawnPosZ);
-    //    Instantiate(animalPrefabs[animalIndex], spawnPos, animalPrefabs[animalIndex].transform.rotation);
-    //}
+  
 
     void Start()
     {
@@ -29,17 +23,15 @@ public class SpawnManager : MonoBehaviour
     void Update()
 
     {
-        //if (Input.GetKeyDown(KeyCode.S)) 
-        //{
-        //    SpawnRandomAnimal();  
-        //}
+        
     }
     void SpawnRandomAnimal()
         {
-            int animalIndex = Random.Range(0, animalPrefabs.Length);
+            int animalIndex = Random.Range(0, animalPrefabs.Length); 
 
             Vector3 spawnPos = new Vector3(Random.Range(-15, 15), 0, spawnPosZ);
-            Instantiate(animalPrefabs[animalIndex], spawnPos, animalPrefabs[animalIndex].transform.rotation);
+            GameObject animal = Instantiate(animalPrefabs[animalIndex], spawnPos, animalPrefabs[animalIndex].transform.rotation);
+            animal.transform.eulerAngles = Vector3.down * 180;
         }
 
     }
