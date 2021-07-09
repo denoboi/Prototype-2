@@ -1221,7 +1221,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5836041f4cbd3b74dabce7f35d18bc66, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 45
+  speed: 55
 --- !u!114 &1000611521
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1246,7 +1246,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 00a0e6a649228894c9628395de69252e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  particle: {fileID: 0}
 --- !u!54 &418791971
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1271,11 +1270,11 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7475258143283850579}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 5.691133, y: 27.51, z: 13.60722}
-  m_Center: {x: 0.85, y: 6.84, z: -8.176375}
+  m_Center: {x: -8.97, y: 6.88, z: -0.37}
 --- !u!1 &7475258143283858721
 GameObject:
   m_ObjectHideFlags: 0
