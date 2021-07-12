@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class GameOver : MonoBehaviour
 {
-    public GameObject particle;
+    public ParticleSystem particle;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,8 +19,10 @@ public class GameOver : MonoBehaviour
     private void OnCollisionEnter(Collision collision)
     {
         Debug.Log("GameOver");
-        Instantiate(particle, gameObject.transform.position + new Vector3(0,5,0), particle.transform.rotation);
-        //Destroy(gameObject, 2f);
+        //Instantiate(particle, gameObject.transform.position + new Vector3(0,5,0), particle.transform.rotation);
+        Destroy(gameObject, 1f);
+        particle.Play();
+
         
 
 
